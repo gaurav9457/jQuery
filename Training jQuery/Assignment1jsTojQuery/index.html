@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jQuery.js" ></script>
+ <script src="./js/scriptJQuery.js" ></script>
+
+ </head>
+ <body>
+    <div id="container">
+       <div id="formDiv">
+        <form  id="formObj">
+		<!-- <div id="nameDiv" class=""> -->
+			<label for="fname" class="lableColor">First Name <span class="starColor">*</span>: </label> <br>
+            
+            <input type="text" id="fname" name="firstname" placeholder="Your First name.." class="inpformat inpValid"   autofocus>
+            <div id="fnameError" class="errorDiv">&nbsp;</div>
+			<!-- <br> -->
+             <!-- </div> -->
+			 
+             <!-- <div id="lnameDiv" class=""> -->
+				<label for="lname" class="lableColor">Last Name <span class="starColor">*</span> : </label> <br>
+            
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="inpformat inpValid" >
+            <div id="lnameError" class="errorDiv">&nbsp;</div>
+             <!-- </div> -->
+            
+            
+			<label for="gender" class="lableColor">Gender <span class="starColor">*</span>: </label>
+            <label class="lableColor"><input type="radio" name="gender" id="gender" value="male">Male</label>
+            <label  class="lableColor"><input type="radio" name="gender" id="gender" value="female">Female</label>
+			<label  class="lableColor"><input type="radio" name="gender" id="gender" value="Other">Other</label>
+            <div id="genderError" >&nbsp;</div>
+            
+			<div id="dobDiv" class="">
+				<label for="dob" class="lableColor">Date Of Birth <span class="starColor">*</span>: </label> <br>
+				
+            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY"  class="inpformat" >
+            <div id="dobError" class="errorDiv">&nbsp;</div>
+            </div>
+
+             <div id="ageDiv" class="">
+				<label for="age" class="lableColor">Age <span class="starColor">*</span>: </label> <br>
+				
+            <input type="number" name="age" id="age" class="inpformat">
+            <div id="ageError" class="errorDiv">&nbsp;</div>
+             </div>
+		
+            
+            
+            <label for="mob" class="lableColor">Mobile no <span class="starColor">*</span>: </label> <br>
+            
+            <input type="tel" name="mob" id="mobile" minlength=0 maxlength=10 class="inpformat">
+            <div id="mobileError" class="errorDiv">&nbsp;</div>
+			<label for="address" class="lableColor">Address <span class="starColor">*</span>: </label><br>
+			<textarea name="" id="addressArea" cols="53" rows="" style="margin:10px;width:400px;"></textarea>
+            <div id="addressAreaError"class="errorDiv">&nbsp;</div>
+			
+			
+			<div id="cityDiv" class="">
+				<label for="city" class="lableColor">City <span class="starColor">*</span>: </label>
+				<br>
+				<select name="city" id="city">
+                <option value="" >Select city</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Nashik">Nashik</option>
+				<option value="Jalgaon">Jalgaon</option>
+				<option value="Surat">Surat</option>
+			    <option value="Nagpur">Nagpur</option>
+
+            </select>
+				
+			</div>
+			          
+           
+           <br>
+           <label for="Skills" class="lableColor">Techinical Skills <span class="starColor">*</span>: </label>
+                <!-- <input type="checkbox" name="Skills" class="checkBoxDiv" id="java" value="Java"><label for="">Java</label> -->
+                <label class="lableColor"><input type="checkbox" name="Skills" class="checkBoxDiv" id="html" value="Html">Html</label>
+                
+                <label class="lableColor"><input type="checkbox" name="Skills" class="checkBoxDiv" id="css" value="Css">CSS</label>
+                <label class="lableColor"><input type="checkbox" name="Skills" class="checkBoxDiv" id="javascript" value="Javascript">
+				Javascript</label>
+				<div id="checkboxError" class="errorDiv">&nbsp;</div>
+
+				<div id="btn-div" class="">
+			        <button   class="btn" id="submit" >Submit &rarr;</button>
+		            <button onclick="" class="btn" id="resetBtn">Reset</button>
+		       </div>
+
+        </form>
+		
+		
+        
+       </div>
+
+       <div class="alert" id="alertBox">
+        <span class="closebtn" id="alertCloseBtn">&times;</span>
+        <strong id="msg"></strong>
+        <div id="progressBar" class="">
+
+        </div>
+    </div>
+
+    </div>
+     
+</body>
+</html>

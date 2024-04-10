@@ -1,0 +1,147 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#container {
+  border-radius: 5px;
+   background-color: rgb(33, 33, 32,0.9);
+  padding: 20px;
+}
+#formDiv{
+  width:430px;
+  height:680px;
+  margin:auto;
+  /* background-color:green; */
+  background: linear-gradient(to right, #af934b, #fbc226); 
+  padding:20px;
+  border-radius:10px;
+}
+
+.inpformat{
+padding:6px;
+width:400px;
+/* border-radius:5px; */
+margin:8px;
+border:none;
+background: none;
+border-bottom: 1px solid ;
+color: rgb(246, 239, 239);
+}
+.inpformat:focus{
+outline:none;
+}
+
+::placeholder {
+  color: rgb(226, 225, 225);
+  
+}
+#city{
+width:400px;
+padding:6px;
+border:none;
+margin:8px;
+background: transparent;
+border-bottom: 1px solid white;
+color:white;
+
+}
+select option{
+background-color:#af934b;
+}
+
+
+.lableColor{
+  color: rgb(255, 255, 255);
+}
+ 
+
+#gender{
+width:30px;
+margin:8px;
+
+}
+.checkBoxDiv{
+width:20px;
+margin:5px;
+}
+.btn{
+padding:10px 15px ;
+border:none;
+margin:30px;
+cursor:pointer;
+}
+#btn-div{
+margin-left:80px;
+}
+#submit{
+background-color:green;
+color:white;
+
+}
+#resetBtn{
+background-color:red;
+color:white;
+}
+#submit:hover{
+  background-color: white;
+  color: green;
+}
+#resetBtn:hover{
+  background-color: white;
+  color: red;
+}
+.starColor{
+color:red;
+}
+
+.alert {
+  padding: 15px;
+  /* background: linear-gradient(to right, #ff416c, #ff4b2b); */
+  /* //background-color: #990000; */
+  background: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  color: white;
+  display: none;
+  width: 400px;
+  position: absolute;
+  top: 20px;
+  right:20px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+#progressBar {
+  width: 200px;
+  height: 5px;
+  background: white;
+  margin-top: 3px;
+  
+}
+
+@keyframes progress {
+  0% {
+      width: 380px
+  }
+
+  100% {
+      width: 0px
+  }
+
+}
+.errorDiv{
+  color: red;
+  font-size: 10px;
+  padding: 0px;
+  /* display: none; */
+}

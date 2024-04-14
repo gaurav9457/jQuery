@@ -1,0 +1,43 @@
+.changecolor {     
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid blue; */
+    background-color:yellow;
+    float:left;
+    margin:auto;
+}
+#divParent{
+   margin: auto;
+   /* background-color: red; */
+}
+.changecolor:hover{
+    background-color:red;
+    cursor: pointer;
+}
+
+
+.yellowBack{
+   background-color:yellow;
+    cursor: pointer;
+}
+ /* .yellowBack:hover{
+   background-color:red;
+    cursor: pointer;
+ } */
+.redBack {
+    background-color: red ;
+}
+/* .redBack:hover{
+background-color: yellow;
+} */
+button{
+    padding: 12px 13px;
+    background-color: yellow;
+    color: red;
+    border: none;
+	cursor:pointer;
+}
+button:hover{
+   background-color:red;
+   color:yellow;
+}
